@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Device</title>
+<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
+<link href="/main.css" rel="stylesheet"></link>
+<script src="/webjars/jquery/jquery.min.js"></script>
+<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+<script src="/device.js"></script>
+</head>
+<body>
+	<div id="main-content" class="container">
+		<div class="row">
+			<h1 style="color: #5e9ca0; text-align: center;">Device Simulator!</h1>
+		</div>
+		<!-- Select Base Directory. -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-sm-4" style="text-align: center;">
+						<div id="red" class="circle"></div>
+						<div class="bulb-label">
+							Red - <span id="red-text">On</span>
+						</div>
+					</div>
+					<div class="col-sm-4" style="text-align: center;">
+						<div id="green" class="circle"></div>
+						<div class="bulb-label">
+							Green - <span id="green-text">On</span>
+						</div>
+					</div>
+					<div class="col-sm-4" style="text-align: center;">
+						<div id="blue" class="circle"></div>
+						<div class="bulb-label">
+							Blue - <span id="blue-text">On</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br></br><div style="border-bottom: 0; border-left:0;border-top:3px;border-right:0; color: maroon;border-style: solid;"></div><br></br>
+		<div class="row" style="margin-bottom: 20px;">
+			<div class="col-md-12">
+				<div class="row">
+					<h1 style="color: #5e9ca0; text-align: center;">Application
+						Simulator!</h1>
+				</div>
+				<div class="row">
+					<div class="col-sm-4" style="text-align: center;">
+						<div><label class="switch">
+							<input id="red-chk" name="red" type="checkbox" checked> <span
+								class="slider round"></span></label>
+						</div>
+					</div>
+					<div class="col-sm-4" style="text-align: center;">
+						<div><label class="switch">
+							<input id="green-chk" name="green" type="checkbox" checked> <span
+								class="slider round"></span></label>
+						</div>
+					</div>
+					<div class="col-sm-4" style="text-align: center;">
+						<div><label class="switch">
+							<input id="blue-chk" name="blue" type="checkbox" checked> <span
+								class="slider round"></span></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
